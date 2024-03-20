@@ -6,13 +6,15 @@ import { ProductsModule } from './products/products.module';
 import { CopyrightDirective } from './copyright.directive';
 import { NumericDirective } from './numeric.directive';
 import { PermissionDirective } from './permission.directive';
+import { SortPipe } from './sort.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     CopyrightDirective,
     NumericDirective,
-    PermissionDirective
+    PermissionDirective,
+    SortPipe
   ],
   imports: [
     BrowserModule,
