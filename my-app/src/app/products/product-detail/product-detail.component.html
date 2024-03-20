@@ -1,0 +1,11 @@
+<div *ngIf="product">
+  <h2>Product Details</h2>
+  <h3>{{ product.name }}</h3>
+  <h4>{{ product.price | currency : "EUR" }}</h4>
+  <div [ngSwitch]="product.name">
+    <p *ngSwitchCase="'Webcam'">Product is used for video</p>
+    <p *ngSwitchCase="'Microphone'">Product is used for audio</p>
+    <p *ngSwitchDefault>Product is for general used</p>
+  </div>
+  <button (click)="buy()">Buy Now</button>
+</div>
